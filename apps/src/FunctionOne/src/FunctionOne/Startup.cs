@@ -22,7 +22,7 @@ public class Startup
         // Example of creating the IConfiguration object and
         // adding it to the dependency injection container.
         var builder = new ConfigurationBuilder()
-                            .AddJsonFile("appsettings.json", true);
+                            .AddJsonFile("appsettings.json", false);
 
         //// Add AWS Systems Manager as a potential provider for the configuration. This is 
         //// available with the Amazon.Extensions.Configuration.SystemsManager NuGet package.

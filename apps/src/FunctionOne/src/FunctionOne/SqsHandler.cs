@@ -15,6 +15,7 @@ public class SqsHandler
         {
             context.Logger.LogInformation($"Processed message {message.Body}");
         }
-        return configuration["HelloKey"];
+        context.Logger.LogInformation($"Processed message {configuration["HelloKey"]}");
+        return "Hello from sqs";
     }
 }
